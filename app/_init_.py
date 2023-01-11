@@ -1,4 +1,4 @@
-from .routes import bp as home
+from routes.home import bp as home
 from flask import Flask
 
 def create_app(test_config=None):
