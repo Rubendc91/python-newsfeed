@@ -1,4 +1,6 @@
 from routes.home import bp as home
+from routes.dashboard import bp as dashboard
+
 from flask import Flask
 
 def create_app(test_config=None):
@@ -14,5 +16,6 @@ def create_app(test_config=None):
   
   # register routes
   app.register_blueprint(home)
+  app.register_blueprint(dashboard)
   
   return app
