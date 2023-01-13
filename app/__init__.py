@@ -1,5 +1,5 @@
-from routes.home import bp as home
-from routes.dashboard import bp as dashboard
+from app.routes import home
+from app.routes import dashboard
 
 from flask import Flask
 
